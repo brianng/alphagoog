@@ -3,17 +3,66 @@
 <head>
 <meta charset="utf-8">
 <title>alpha goog</title>
-<link href='http://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Monofett|Nunito' rel='stylesheet' type='text/css'>
 <style>
-body {
-  font-size: 64px;
+#content {
+  max-width: 514px;
+  margin: 0 auto;
+}
+#brand {
+  font-size: 72px;
   font-family: 'Monofett', sans-serif;
-  text-align: center;
+  text-align: right;
+  line-height: 0.8;
+}
+#bubble {
+  width: 425px;
+  height: 35px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #a7cc95;
+  opacity: 0.8;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  top: 55px;
+  margin: 0 auto;
+}
+#bubble a {
+  color: white;
+  text-decoration: none;
+}
+#bubble a:hover {
+  text-decoration: underline;
+}
+#bubble:after 
+{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 15px 0;
+  border-color: #a7cc95 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-left: -15px;
+  bottom: -15px;
+  left: 15%;
 }
 </style>
 </head>
 <body>
-alpha goog
+<div id="content">
+  <div id="brand">alpha<br>goog</div>
+  <div id="bubble">
+    <a href="http://nerdist.com/take-a-tour-of-banksys-dismaland-with-channel-4-news/">
+      I’m going to Dismaland!
+    </a>
+  </div>
+  <img src="wombat.jpg">
+</div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
